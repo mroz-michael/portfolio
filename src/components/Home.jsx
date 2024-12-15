@@ -1,5 +1,10 @@
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import { GrGithub } from "react-icons/gr";
+import { TbTreadmill } from "react-icons/tb";
+import { AiOutlineExperiment } from "react-icons/ai";
+
+
 
 const Home = () => {
     const navigate = useNavigate();
@@ -11,13 +16,13 @@ const Home = () => {
                     <span className='first-line'>Hi! I'm Michael,</span>
                 </p>
                 <p className="second_line">
-                <span className='second-line'>Welcome to My Website ^_^</span>
+                    <span className='second-line'>Welcome to My Website ^_^</span>
                 </p>
             </header>
             <nav id='button_links'>
-                <Button label="Projects" clickHandler={() => navigate('/projects')} />
-                <Button label="Experience" clickHandler={() => navigate('/experience')} />
-                <Button label="Github" clickHandler={() => window.location.href = "https://github.com/mroz-michael"} />
+                <Button label="Projects" logo={<AiOutlineExperiment />} clickHandler={() => navigate('/projects')} />
+                <Button label="Experience" logo={<TbTreadmill />} clickHandler={() => navigate('/experience')} />
+                <Button label="Github" logo={<GrGithub />} clickHandler={() => window.location.href = "https://github.com/mroz-michael"} />
             </nav>
         </main>
     );

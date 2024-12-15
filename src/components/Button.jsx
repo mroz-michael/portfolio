@@ -1,10 +1,10 @@
-const Button = ({label, clickHandler}) => {
+const Button = ({label, logo, clickHandler}) => {
 
 
     return (
         <>
         <button className='link_button' onClick={() => clickHandler()}>
-        {label}
+        <p className="button_content">{logo}{label}</p>
         </button>
         </>
     )

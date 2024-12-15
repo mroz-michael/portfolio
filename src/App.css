@@ -1,5 +1,6 @@
 #root {
   font-family: consolas;
+  background-color: whitesmoke;
 }
 
 #main_container {
@@ -17,6 +18,7 @@
   max-width: 80%;
   text-align: center;
   overflow: hidden;
+  margin-top: 10%;
 }
 
 .first-line, .second-line {
@@ -25,7 +27,7 @@
   overflow: hidden;
   width: 0;
   font-style: italic;
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 1.5em;
 }
 
@@ -34,11 +36,11 @@
 }
 
 .second-line {
-  animation: typing 2s steps(25) 1s forwards, cursor 0.75s step-end infinite;
+  animation: typing 1.5s steps(25) 1s forwards, cursor 0.75s step-end infinite;
   animation-delay: 2s;  /* Delay for the second line to start after the first one ends */
 }
 
-/* Typing effect with cubic-bezier easing for smoother motion */
+
 @keyframes typing {
   from {
     width: 0;
@@ -57,17 +59,34 @@
 
 #button_links {
   margin: auto;
+  margin-top: 2%;
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  gap: 20px;
+  min-width: fit-content;
+  width: 50%;
 }
 
 .link_button {
-  background-color: black;
-  color: rgb(118, 183, 129);
-  height: 7em;
-  width: 8em;
+  background-color: whitesmoke;
+  border: 2px solid rgba(128, 128, 128, 0.199);
+  color: gray;
+  width: 12em;
+  height: 3em;
+  padding: 0%;
 }
+
+.link_button:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.119);
+  border: 2px solid rgba(128, 128, 128, 0.199);
+}
+
+.button_content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 @media screen and (min-width: 900px) {
   /* Add responsive styles here */
