@@ -1,11 +1,11 @@
 #root {
   font-family: consolas;
   background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
 }
 
 #main_container {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,23 +57,24 @@
   }
 }
 
+
 #button_links {
-  margin: auto;
-  margin-top: 2%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   gap: 20px;
   min-width: fit-content;
   width: 50%;
 }
 
+
 .link_button {
   background-color: whitesmoke;
-  border: 2px solid rgba(128, 128, 128, 0.199);
-  color: gray;
-  width: 12em;
-  height: 3em;
-  padding: 0%;
+  border: 2px solid rgba(0, 0, 0, 0.475);
+  color: rgba(0, 0, 0);
+  width: 15em;
+  height: 5em;
+  padding: 0%;  
 }
 
 .link_button:hover {
@@ -84,10 +85,51 @@
 
 .button_content {
   display: flex;
-  justify-content: space-evenly;
+  padding-left: 20%;
+  gap: 10%;
 }
+
+.home_link {
+  font-size: x-large;
+  background-color: whitesmoke;
+  width: fit-content;
+  margin-top: 2%;
+  margin-left: 2%;
+  display: block;
+  border: none;
+} 
+
 
 
 @media screen and (min-width: 900px) {
-  /* Add responsive styles here */
+  
+  #button_links {
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    min-width: fit-content;
+    width: 50%;
+  }
+  
+
+  .link_button {
+    background-color: whitesmoke;
+    border: 2px solid rgba(128, 128, 128, 0.199);
+    color: gray;
+    width: 12em;
+    height: 3em;
+    padding: 0%;
+  }
+
+  .button_content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    gap: 0;
+  }
+  
+
 }

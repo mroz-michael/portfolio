@@ -2,8 +2,7 @@ const Experience = () => {
     return(
 
         <section>
-            this is where experience will go? 
-
+            this is where experience will go :)
         </section>
     )
 }

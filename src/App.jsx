@@ -1,5 +1,5 @@
 
-import './App.css'
+import './styles/App.css'
 import Home from './components/Home';
 import Projects from './components/Projects'
 import Experience from './components/Experience';
