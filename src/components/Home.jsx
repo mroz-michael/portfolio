@@ -22,7 +22,7 @@ const Home = () => {
             <nav id='button_links'>
                 <Button label="Projects" logo={<AiOutlineExperiment />} clickHandler={() => navigate('/projects')} />
                 <Button label="Experience" logo={<TbTreadmill />} clickHandler={() => navigate('/experience')} />
-                <Button label="Github" logo={<GrGithub />} clickHandler={() => window.location.href = "https://github.com/mroz-michael"} />
+                <Button label="GitHub" logo={<GrGithub />} clickHandler={() => window.location.href = "https://github.com/mroz-michael"} />
             </nav>
         </main>
     );
