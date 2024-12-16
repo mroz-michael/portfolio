@@ -24,7 +24,7 @@
 #project_header {
     display: flex;
     flex-direction: column;
-    min-height: 6rem;
+    min-height: 3rem;
     width: 15rem;
 }
 
@@ -90,6 +90,11 @@
     border: none;
 } 
 
+@media screen and (max-width: 338px) {
+    #project_list{
+        padding-left: 10px;
+    }
+}
 
 
 @media screen and (min-width: 900px) {
