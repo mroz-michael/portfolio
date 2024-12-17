@@ -10,19 +10,19 @@ const Projects = () => {
     const projectData = [
 
         {"name": "Compiler Front End",
-            "description": "A scanner and parser to tokenize and parse txt file input according to a JSON-like grammar.",
+            "description": "A scanner and parser that tokenize and parse txt file input according to a JSON-like grammar.",
             "tech_used": ["python"],
             "github_link": "https://github.com/mroz-michael/compiler_frontend"
         },
     
         { "name": "Dal CS Review Site",
-            "description": "A MERN stack web app with user authentication that displays Dalhousie cs courses, allowing users to create reviews.",
+            "description": "A MERN stack web app with user authentication that displays Dalhousie CS courses, allowing users to create reviews.",
             "tech_used": ["react", "mongodb", "js", "express", "node", "html", "css"],
             "github_link": "https://github.com/mroz-michael/cs-dal-courseinfo"
         },
     
         { "name": "CLI Chess",
-            "description": "A command line version of Chess using Java OOP.",
+            "description": "A command line version of Chess using Java Object-Oriented Principles.",
             "tech_used": ["java"],
             "github_link": "https://github.com/mroz-michael/cli-chess"
         },
@@ -30,7 +30,7 @@ const Projects = () => {
         { "name": "Inventory Manager",
             "description": "A MERN stack web app that performs CRUD operations on a ficticious inventory of products.",
             "tech_used": ["react", "mongodb", "js", "express", "node", "html", "css"],
-            "github_link": "https://github.com/mroz-michael/cs-dal-courseinfo"
+            "github_link": "https://github.com/mroz-michael/web-inventory_manager"
         }
     ]
     
@@ -41,7 +41,7 @@ const Projects = () => {
                     <AiOutlineExperiment />
                     <h3>Projects</h3>
                 </div>
-               <NavBar />
+               <NavBar ignoreLogo={"projects"}/>
             </header>
             <ul id="project_list">
                 {projectData.map(project => 
