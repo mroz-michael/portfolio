@@ -37,9 +37,19 @@
     font-size: 2rem;
 }
 
+.gpa, .job_header > p{
+    font-size: .8rem;
+}
+
 .gpa {
-    font-size: 1rem;
+    color: #666;
     margin-top: 0;
+}
+
+.job_header {
+    display: flex;
+    align-items: center;
+    gap: 5%;
 }
 
 @media screen and (min-width: 900px) {
@@ -58,5 +68,6 @@
         gap: 7rem;
         align-items: flex-start;
     }
+    
     
 }
