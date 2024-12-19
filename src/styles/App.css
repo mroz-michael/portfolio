@@ -2,6 +2,13 @@
   font-family: consolas;
   background-color: whitesmoke;
   width: 100vw;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 400px) {
+  #root {
+    min-width: fit-content;
+  }
 }
 
 #main_container {

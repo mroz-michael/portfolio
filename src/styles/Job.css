@@ -9,13 +9,13 @@
 /* Job Title and Details Row */
 #job_title_row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #job_title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin: 0;
 }
@@ -23,7 +23,7 @@
 /* Job Details (Employer, Date, Location) */
 #job_details {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
     font-size: 1rem;
     font-family: helvetica;
     font-weight: normal;
@@ -31,8 +31,54 @@
     margin: 0;
 }
 
-/* Job Description */
+/* if date is only item in job_details */
+#date_only {
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* if date is not only item in job_details */
+#full_job_details {
+    margin-right: 10px;
+}
+
 #job_description {
     font-size: 1rem;
-    margin-top: 10px;
+}
+
+@media screen and (min-width: 900px) {
+
+    #job_title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #job_description {
+        font-size: 1.1rem;
+    }
+
+        
+    /* Job Details (Employer, Date, Location) */
+    #job_details {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        font-family: helvetica;
+        font-weight: normal;
+        color: #666;
+        margin: 0;
+    }
+
+    /* if date is only item in job_details */
+    #date_only {
+        margin: 0;
+    }
+
+    /* if date is not only item in job_details */
+    #full_job_details {
+        margin-right: 10px;
+    }
+
+    
 }

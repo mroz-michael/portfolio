@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    font-size: large;
     margin-top: 10%;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .experience_section_header > p {
-    font-size: 28px;
+    font-size: 1.2rem;
 }
 
 .experience_section_header > :first-child {
@@ -38,7 +39,7 @@
 }
 
 .gpa, .job_header > p{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .gpa {
@@ -58,8 +59,13 @@
         flex-direction: row;
         align-items: baseline;
         font-size: 2.5vw;
-        padding-left: 40px;
         margin-top: 2%;
+    }
+
+    #experience_title_container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .event_info {
@@ -68,6 +74,11 @@
         gap: 7rem;
         align-items: flex-start;
     }
+
+    .experience_section_header > p {
+        font-size: 28px;
+    }
+    
     
     
 }

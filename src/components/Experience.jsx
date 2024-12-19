@@ -58,9 +58,9 @@ const Experience = () => {
                     <li>
                         <Job title="Human Resources Intern"
                             employer="Scholten's"
-                            date="2022"
+                            date="Spring 2022"
                             location="Remote"
-                            description="In my past life, I studied business with a focus on HR Management. Although I came to realize it wasn't the right fit for me, I'm grateful for the invaluable exeprience I gained about business strategy and professional communication."
+                            description="In a past life, I studied business with a focus on HR Management. Although I came to realize it wasn't the right fit for me, I'm grateful for the invaluable exeprience I gained about business strategy and professional communication."
                         
                         />
                     </li>
@@ -84,9 +84,14 @@ const Experience = () => {
                                 } 
                         />
                     </li>
+                    <li>
+                    <Job title="Sexton Scholar"
+                        date="Fall 2023, Winter 2024, Fall 2024"
+                        description='The Sexton Scholar designation is awarded to Dalhousie CS students who achieve a 3.85 or higher GPA for the semester.'         
+                    />
+                    </li>
                 </ul>
             </section>
-
         </section>
     )
 }
